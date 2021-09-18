@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru-BY">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piano</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="javascript/app.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header_title">Virtual Piano</h1>
+    </header>
+    <main>
+    <div class="btn_container">
+        <button class="btn btn_notes btn_active">Notes</button>
+        <button class=" btn btn_letters">Letters</button>
+    </div>
+    <div class="piano">
+        <div data-note="C"  data-letter="Z" class="key white">Z</div>
+        <div data-note="Db" data-letter="S" class="key black">S</div>
+        <div data-note="D" data-letter="X" class="key white">X</div>
+        <div data-note="Eb" data-letter="D" class="key black">D</div>
+        <div data-note="E" data-letter="C" class="key white">C</div>
+        <div data-note="F" data-letter="V" class="key white">V</div>
+        <div data-note="Gb" data-letter="G" class="key black">G</div>
+        <div data-note="G" data-letter="B" class="key white">B</div>
+        <div data-note="Ab" data-letter="H" class="key black">H</div>
+        <div data-note="A" data-letter="N" class="key white">N</div>
+        <div data-note="Bb" data-letter="J" class="key black">J</div>
+        <div data-note="B" data-letter="M" class="key white">M</div>
+    </div>
+    
+    <audio id="C" src="sounds/C.mp3"></audio>
+    <audio id="Db" src="sounds/Db.mp3"></audio>
+    <audio id="D" src="sounds/D.mp3"></audio>
+    <audio id="Eb" src="sounds/Eb.mp3"></audio>
+    <audio id="E" src="sounds/E.mp3"></audio>
+    <audio id="F" src="sounds/F.mp3"></audio>
+    <audio id="Gb" src="sounds/Gb.mp3"></audio>
+    <audio id="G" src="sounds/G.mp3"></audio>
+    <audio id="Ab" src="sounds/Ab.mp3"></audio>
+    <audio id="A" src="sounds/A.mp3"></audio>
+    <audio id="Bb" src="sounds/Bb.mp3"></audio>
+    <audio id="B" src="sounds/B.mp3"></audio>
+    <button id="toggle-fs" onClick="toggleFS();" class="fullscreen openfullscreen"><img src="images/fullscreen-open.svg"></button>
+</main>
+</body>
+</html>
+ 
